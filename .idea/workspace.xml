@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df657782-82d8-482d-b7a3-6275714dc5ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/WhatsApp_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charm-glisten-6.1.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whatsapp/StartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/whatsapp/StartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/comandos/ComandosDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conexao/ConnectionDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Conversation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Messager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testaClasses/TestaConexao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/whatsapp/cardC.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/whatsapp/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/homem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/transferir.jpg" afterDir="false" />
+    <list default="true" id="df657782-82d8-482d-b7a3-6275714dc5ac" name="Changes" comment="First Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/whatsapp/StartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/whatsapp/StartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comandos/ComandosDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comandos/ComandosDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Conversation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Conversation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Messager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Messager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testaClasses/TestaConexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testaClasses/TestaConexao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/whatsapp/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/whatsapp/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +82,27 @@
       <option name="presentableId" value="Default" />
       <updated>1698881827079</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1699200211613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699200211613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1699200304832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699200304832</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>

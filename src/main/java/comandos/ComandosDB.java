@@ -78,9 +78,8 @@ public class ComandosDB {
         return usuarios;
     }
 
-    public Conversation getConversaPorId(Long idConversa) {
+    public Conversation getConversaPorId(Long idConversa, String sql) {
         conexao = new ConnectionDB().startConnection();
-        String sql = "SELECT * FROM Conversas WHERE id = ?";
         try (PreparedStatement ps = conexao.prepareStatement(sql)) {
             ps.setLong(1, idConversa);
 
@@ -100,27 +99,46 @@ public class ComandosDB {
         }
         return null; // Retorna null se a conversa não for encontrada
     }
+    public Conversation pegarConversaDono(Long idDono, Long idDono2, String sql) {
+        conexao = new ConnectionDB().startConnection();
+        try (PreparedStatement ps = conexao.prepareStatement(sql)) {
+            ps.setLong(1, idDono);
+            ps.setLong(2, idDono2);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    int id = (int) rs.getLong("id");
+                    int idUsuario1 = (rs.getInt("id_usuario"));
+                    int id_usuario2 = (rs.getInt("id_usuario_2"));
 
-    public Messager pegarMessager() {
-        Conversation conversa = null;
-        conversa = getConversaPorId(1L);
-        if (conversa != null) {
+                    Conversation conversa = new Conversation(id, idUsuario1, id_usuario2);
+                    return conversa;
+                }
+            }
+            conexao.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null; // Retorna null se a conversa não for encontrada
+    }
+
+
+    public Messager pegarMessager(Long id_Conversa) {
+
             conexao = new ConnectionDB().startConnection();
             String sql = "SELECT * FROM mensagem WHERE conversa_id = ?";
 
             try (PreparedStatement ps = conexao.prepareStatement(sql)) {
-                ps.setLong(1, conversa.getIdconversa());
+                ps.setLong(1, id_Conversa);
 
                 try (ResultSet rs = ps.executeQuery()) {
                     if (rs.next()) {
-                        int idConversa = (int) conversa.getIdconversa();
-                        int idUsuario1 = conversa.getId_usuario();
-                        int id_usuario2 = conversa.getId_usuario_2();
+                        int idConversa = rs.getInt("conversa_id");
+                        int idUsuario1 = rs.getInt("remetente_id");
                         int id_mensagem = (rs.getInt("id"));
                         String conteudo = (rs.getString("conteudo"));
                         String data = (rs.getString("data_envio"));
 
-                        Messager messager = new Messager(idConversa, idUsuario1, id_usuario2, id_mensagem, conteudo, data);
+                        Messager messager = new Messager(idConversa, idUsuario1, id_mensagem, conteudo, data);
                         return messager;
                     }
 
@@ -130,7 +148,6 @@ public class ComandosDB {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-        }
         return null;
     }
 }

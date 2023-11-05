@@ -5,8 +5,8 @@ public class Messager extends Conversation{
     private String conteudo;
     private String data_Envio;
 
-    public Messager(int idconversa, int id_usuario, int id_usuario_2, int id_Mensagem, String conteudo, String data_Envio) {
-        super(idconversa, id_usuario, id_usuario_2);
+    public Messager(int idconversa, int id_usuario, int id_Mensagem, String conteudo, String data_Envio) {
+        super(idconversa, id_usuario);
         this.id_Mensagem = id_Mensagem;
         this.conteudo = conteudo;
         this.data_Envio = data_Envio;

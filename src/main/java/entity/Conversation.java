@@ -5,7 +5,7 @@ public class Conversation{
     private int id_usuario;
     private int id_usuario_2;
 
-    public Conversation() {
+    public Conversation(int idconversa, int id_usuario) {
     }
 
     public Conversation(int idconversa, int id_usuario, int id_usuario_2) {

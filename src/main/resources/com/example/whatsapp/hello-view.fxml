@@ -27,7 +27,7 @@
             <Image url="@../../../imgs/lupa.png" />
          </image>
       </ImageView>
-      <TextField layoutX="11.0" layoutY="79.0" prefHeight="26.0" prefWidth="312.0" promptText="Search or start new chat" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-width: 0.5px;" />
+      <TextField layoutX="11.0" layoutY="76.0" prefHeight="26.0" prefWidth="312.0" promptText="Search or start new chat" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-width: 0.5px;" />
       <Label layoutX="109.0" layoutY="25.0" text="Chats">
          <font>
             <Font size="19.0" />
@@ -42,9 +42,9 @@
             </FlowPane>
          </content>
       </ScrollPane>
-      <ScrollPane layoutX="328.0" layoutY="74.0" prefHeight="474.0" prefWidth="657.0">
+      <ScrollPane layoutX="328.0" layoutY="76.0" prefHeight="431.0" prefWidth="657.0">
          <content>
-            <FlowPane fx:id="chatPane" prefHeight="462.0" prefWidth="638.0" visible="false">
+            <FlowPane fx:id="chatPane" prefHeight="426.0" prefWidth="647.0" visible="false">
                <children>
                   <Label text="Label" />
                </children>
@@ -56,6 +56,8 @@
             <Label fx:id="userNameChat" alignment="TOP_CENTER" layoutX="180.0" layoutY="17.0" prefHeight="18.0" prefWidth="298.0" text="Label" />
          </children>
       </Pane>
+      <TextField fx:id="tfSendMenssages" layoutX="328.0" layoutY="507.0" prefHeight="28.0" prefWidth="455.0" promptText="Send or start new chat" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-width: 0.5px;" />
+      <Button fx:id="btSendMessage" layoutX="791.0" layoutY="508.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="54.0" text="Button" />
 
    </children>
 </Pane>
